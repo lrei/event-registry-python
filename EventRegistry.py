@@ -838,7 +838,7 @@ class EventRegistry(object):
 
     # return info about recently modified articles
     def getRecentEvents(self, maxEventCount = 60, maxMinsBack = 10 * 60, lang = "eng", eventsWithLocationOnly = True, eventsWithLangOnly = False, lastStoryActivityId = 0, eventUpdatesAfter = ""):
-        params = {  "action": "getEventActivity",
+        params = {  "action": "getRecentActivity",
                     "eventCount": maxEventCount,                     # max number of returned events
                     "eventsWithLocationOnly": eventsWithLocationOnly, # return only events that have a known geo location
                     "eventLang": lang,                                # language of the event to return
